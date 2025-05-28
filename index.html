@@ -21,7 +21,6 @@
       flex-direction: column;
       align-items: center;
       overflow-x: hidden;
-      text-shadow: 0 0 5px #000;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
@@ -29,7 +28,6 @@
       font-size: 3rem;
       margin-bottom: 40px;
       color: #1E90FF; /* Azul brilhante */
-      text-shadow: 0 0 10px #1E90FF, 0 0 20px #1E90FF;
     }
     .container {
       display: flex;
@@ -69,8 +67,7 @@
     }
     .flashcard:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 18px #1E90FF, inset 0 0 12px #1E90FF;
-      animation: glow 1.4s ease-in-out infinite alternate;
+      box-shadow: 0 0 12px #1E90FF, inset 0 0 10px #1E90FF;
     }
     .flashcard.flipped {
       transform: rotateY(180deg) scale(1.05);
@@ -94,7 +91,7 @@
     .card-front {
       background: linear-gradient(145deg, #1E90FF, #4682B4); /* Gradiente azul */
       border: 2px solid #1E90FF;
-      box-shadow: 0 0 15px #1E90FF, inset 0 0 10px #1E90FF;
+      box-shadow: 0 0 12px #1E90FF, inset 0 0 10px #1E90FF;
     }
     .card-front h2 {
       font-family: 'Orbitron', sans-serif;
@@ -102,13 +99,12 @@
       font-size: 1.6rem;
       margin-bottom: 15px;
       letter-spacing: 1.2px;
-      color: #1E90FF;
-      text-shadow: 0 0 6px #1E90FF, 0 0 12px #1E90FF;
+      color: #000000; /* Título em preto */
     }
     .card-back {
       background: linear-gradient(145deg, #191970, #00008B); /* Gradiente azul escuro */
       border: 2px solid #00008B;
-      box-shadow: 0 0 20px #00008B, inset 0 0 10px #00008B;
+      box-shadow: 0 0 18px #00008B, inset 0 0 10px #00008B;
       transform: rotateY(180deg);
       color: #E0E0E0;
     }
@@ -119,21 +115,12 @@
       margin-bottom: 15px;
       letter-spacing: 1.1px;
       color: #00008B;
-      text-shadow: 0 0 6px #00008B, 0 0 12px #00008B;
     }
     .question-text, .answer-text {
       font-weight: 600;
       line-height: 1.4;
       max-height: 6em;
       overflow: hidden;
-    }
-    @keyframes glow {
-      0%, 100% {
-        box-shadow: 0 0 10px #1E90FF, 0 0 20px #1E90FF, 0 0 30px #1E90FF;
-      }
-      50% {
-        box-shadow: 0 0 18px #4682B4, 0 0 30px #4682B4, 0 0 40px #4682B4;
-      }
     }
   </style>
 </head>
