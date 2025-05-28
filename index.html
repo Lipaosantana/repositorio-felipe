@@ -13,9 +13,8 @@
     }
     body {
       font-family: 'Rajdhani', sans-serif;
-      background: url('https://images.unsplash.com/photo-1505760202443-85e82da7a314?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      background: #000000; /* Fundo preto */
+      color: #ffffff;
       min-height: 100vh;
       padding: 40px 20px;
       display: flex;
@@ -29,8 +28,8 @@
       font-weight: 700;
       font-size: 3rem;
       margin-bottom: 40px;
-      color:#FF5733;
-      text-shadow: 0 0 10px #FF7F50, 0 0 20px #FF7F50;
+      color: #1E90FF; /* Azul brilhante */
+      text-shadow: 0 0 10px #1E90FF, 0 0 20px #1E90FF;
     }
     .container {
       display: flex;
@@ -43,7 +42,7 @@
       width: 100%;
       max-width: 1400px;
       scrollbar-width: thin;
-      scrollbar-color: #FF5733 transparent;
+      scrollbar-color: #1E90FF transparent;
     }
     .container::-webkit-scrollbar {
       width: 8px;
@@ -52,16 +51,16 @@
       background: transparent;
     }
     .container::-webkit-scrollbar-thumb {
-      background-color: #FF5733;
+      background-color: #1E90FF;
       border-radius: 10px;
     }
     .flashcard {
-      background: rgba(50, 30, 15, 0.85);
+      background: rgba(0, 0, 0, 0.85); /* Fundo preto transparente */
       width: 300px;
       height: 190px;
       perspective: 1000px;
       border-radius: 20px;
-      box-shadow: 0 0 10px #FF5733, inset 0 0 8px #FF5733;
+      box-shadow: 0 0 10px #1E90FF, inset 0 0 8px #1E90FF;
       cursor: pointer;
       position: relative;
       transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,7 +69,7 @@
     }
     .flashcard:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 18px #FF5733, inset 0 0 12px #FF5733;
+      box-shadow: 0 0 18px #1E90FF, inset 0 0 12px #1E90FF;
       animation: glow 1.4s ease-in-out infinite alternate;
     }
     .flashcard.flipped {
@@ -82,20 +81,20 @@
       height: 100%;
       backface-visibility: hidden;
       border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 20px 25px;
       font-size: 17px;
-      color: #fff;
+      color: #ffffff;
       text-align: center;
     }
     .card-front {
-      background: linear-gradient(145deg, #FF6F00, #FF9E00);
-      border: 2px solid #FF5733;
-      box-shadow: 0 0 15px #FF5733, inset 0 0 10px #FF5733;
+      background: linear-gradient(145deg, #1E90FF, #4682B4); /* Gradiente azul */
+      border: 2px solid #1E90FF;
+      box-shadow: 0 0 15px #1E90FF, inset 0 0 10px #1E90FF;
     }
     .card-front h2 {
       font-family: 'Orbitron', sans-serif;
@@ -103,15 +102,15 @@
       font-size: 1.6rem;
       margin-bottom: 15px;
       letter-spacing: 1.2px;
-      color: #FF5733;
-      text-shadow: 0 0 6px #FF5733, 0 0 12px #FF5733;
+      color: #1E90FF;
+      text-shadow: 0 0 6px #1E90FF, 0 0 12px #1E90FF;
     }
     .card-back {
-      background: linear-gradient(145deg, #F44336, #FF5722);
-      border: 2px solid #FF7043;
-      box-shadow: 0 0 20px #FF7043, inset 0 0 10px #FF7043;
+      background: linear-gradient(145deg, #191970, #00008B); /* Gradiente azul escuro */
+      border: 2px solid #00008B;
+      box-shadow: 0 0 20px #00008B, inset 0 0 10px #00008B;
       transform: rotateY(180deg);
-      color: #FFF5E1;
+      color: #E0E0E0;
     }
     .card-back h3 {
       font-family: 'Orbitron', sans-serif;
@@ -119,8 +118,8 @@
       font-size: 1.4rem;
       margin-bottom: 15px;
       letter-spacing: 1.1px;
-      color: #FF7043;
-      text-shadow: 0 0 6px #FF7043, 0 0 12px #FF7043;
+      color: #00008B;
+      text-shadow: 0 0 6px #00008B, 0 0 12px #00008B;
     }
     .question-text, .answer-text {
       font-weight: 600;
@@ -130,10 +129,10 @@
     }
     @keyframes glow {
       0%, 100% {
-        box-shadow: 0 0 10px #FF5733, 0 0 20px #FF5733, 0 0 30px #FF5733;
+        box-shadow: 0 0 10px #1E90FF, 0 0 20px #1E90FF, 0 0 30px #1E90FF;
       }
       50% {
-        box-shadow: 0 0 18px #FF7043, 0 0 30px #FF7043, 0 0 40px #FF7043;
+        box-shadow: 0 0 18px #4682B4, 0 0 30px #4682B4, 0 0 40px #4682B4;
       }
     }
   </style>
